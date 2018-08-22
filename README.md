@@ -1,7 +1,16 @@
 # Universal Webcomics - WIP
 
 ## What it is
-An endeavor to provide easy to understand guidance on creating webcomics that are both accessible (WCAG compliant) and capable of supporting multiple languages (internationalization).
+First and foremost, it is a conversation, an endeavor to build an understanding of the comic creation processes and to create and provide easy to understand guidance on enhancing these comics to make them both more accessible (WCAG compliant) and capable of supporting multiple languages (internationalization).
+
+## Who is involved
+Cartoonists
+Target Audiences
+Accessibility Web Developers
+**YOU!**
+
+## Why
+I have enjoyed comics since I was a small child. I would dig through the daily newspaper for the "funnies"; this naturally progressed to reading comics on the internet. As a web developer, I was introduced to the world of accessibility, and gained a bit of a passion for it. At some point it occured to me - as much as I enjoy comics, as a primarily visual medium they are typically unintentionally locked out to the blind, but having learned about web accessibility I understand, they don't need to be. This project will hopefully provide guidance on the means to open up this world to them. If absolutely anyone is able to access a new world as a result of this project, I will consider it a success.
 
 ## Phase 1: ComicA11y
 The initial phase of this project is focused on what's called "[accessibility](https://en.wikipedia.org/wiki/Computer_accessibility)". "A11y", pronounced like the word it looks like, "ally", is the [numeronym](https://en.wikipedia.org/wiki/Numeronym) for "accessibility". People who work in computer accessibility like to think of themselves as allies to the disabled, and work to ensure technology is useable by them, ideally by bringing the experience up to the same level of quality and pizzaz as other uses (and not vice-versa).
