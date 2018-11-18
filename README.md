@@ -1,9 +1,12 @@
-# Universal Webcomics - WIP
-<main>
-  <article>
-   
+<main markdown=1>
+
+  # Universal Webcomics - WIP
+
+  <article markdown=1>
+  
   ## What it is
   First and foremost, it is a conversation, an endeavor to build an understanding of the comic creation processes and to create and provide easy to understand guidance on enhancing these comics to make them both more accessible (WCAG compliant) and capable of supporting multiple languages (internationalization).
+  </article>
 
   ## Who is involved
   * Cartoonists
@@ -37,3 +40,4 @@
   To jasonday, from the web-a11y slack channel, for suggesting the name "Comica11y"; while it lacked the necessary reference to the internationalization aspects of the project, it's an amusing name that seems fitting for that phase.
 
   To the many, many creators of all the wonderful webcomics I've enjoyed over the years.
+</main>
