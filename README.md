@@ -25,6 +25,7 @@ I have enjoyed comics since I was a small child. I would dig through the daily n
 </article>
 
 <article markdown="1" aria-labelledby="phase-1-comica11y">
+
 ## Phase 1: ComicA11y
 The initial phase of this project is focused on what's called "[accessibility](https://en.wikipedia.org/wiki/Computer_accessibility)". "A11y", pronounced like the word it looks like, "ally", is the [numeronym](https://en.wikipedia.org/wiki/Numeronym) for "accessibility". People who work in computer accessibility like to think of themselves as allies to the disabled, and work to ensure technology is useable by them, ideally by bringing the experience up to the same level of quality and pizzaz as other uses (and not vice-versa).
 
