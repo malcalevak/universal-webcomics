@@ -28,14 +28,19 @@ I have enjoyed comics since I was a small child. I would dig through the daily n
 The initial phase of this project is focused on what's called "[accessibility](https://en.wikipedia.org/wiki/Computer_accessibility)". "A11y", pronounced like the word it looks like, "ally", is the [numeronym](https://en.wikipedia.org/wiki/Numeronym) for "accessibility". People who work in computer accessibility like to think of themselves as allies to the disabled, and work to ensure technology is usable by them, ideally by bringing the experience up to the same level of quality and pizzaz as other uses (and not vice-versa).
 
 ### Phase 1 Goals
-* Provide a single resource that pulls together the latest applicable guidance from the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
-* Provide suggested Best Practices and Guidance for items not explicitly covered by WCAG
-* Provide examples demonstrating these best practices, along with corresponding documentation explaining them.
-* Ease of implementation - if it's complicated, no one is going to want to make the effort
-* Monetization - this implementation be financially worth the effort
+<ul aria-labelledby="phase-1-goals">
+  <li>Provide a single resource that pulls together the latest applicable guidance from the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a>
+  </li>
+  <li>Provide suggested Best Practices and Guidance for items not explicitly covered by WCAG</li>
+  <li>Provide examples demonstrating these best practices, along with corresponding documentation explaining them.</li>
+  <li>Ease of implementation - if it's complicated, no one is going to want to make the effort</li>
+  <li>Monetization - this implementation be financially worth the effort</li>
+</ul>
 
 ### Phase 1 Bonus Goals
-* Provide guidance on how to improve the accessibility of the actual art.
+<ul aria-labelledby="phase-1-bonus-goals">
+  <li>Provide guidance on how to improve the accessibility of the actual art.</li>
+</ul>
 
 </article>
 
