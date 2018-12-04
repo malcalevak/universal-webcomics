@@ -7,15 +7,13 @@ First and foremost, it is a conversation, an endeavor to build an understanding 
 
 </article>
 
-<article markdown="1" aria-labelledby="who-is-involved">
-
 ## Who is involved
-* Cartoonists
-* Target Audiences
-* Accessibility Web Developers
-* **YOU!**
-
-</article>
+<ul aria-labelledby="who-is-involved">
+  <li>Cartoonists</li>
+  <li>Target Audiences</li>
+  <li>Accessibility Web Developers</li>
+  <li><strong>YOU!</strong></li>
+</ul>
 
 <article markdown="1" aria-labelledby="why">
 
