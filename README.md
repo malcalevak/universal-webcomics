@@ -1,5 +1,9 @@
+<!-- blank line -->
+<div hidden>
+  
 # Universal Webcomics - WIP
 
+</div>
 <article markdown="1" aria-labelledby="what-it-is">
 
 ## What it is
