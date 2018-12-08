@@ -22,7 +22,7 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
+    <header class="page-header">
       <h1 class="project-name" id="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       {% comment %}
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -36,7 +36,7 @@
       {% endif %}
     </header>
 
-    <main id="content" class="main-content" role="main" aria-labelledby="project-name">
+    <main id="content" class="main-content" aria-labelledby="project-name">
       {{ content }}
 
       <footer class="site-footer">
