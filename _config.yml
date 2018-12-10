@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 title: Universal Webcomics
+permalink: /:slug
 sass:
   style: compact
