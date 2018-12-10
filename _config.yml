@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 title: Universal Webcomics
+include: ['pages']
 permalink: /:slug
 sass:
   style: compact
