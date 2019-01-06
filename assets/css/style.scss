@@ -6,6 +6,10 @@ $blockquote-text-color: #6A7A72;
   
 @import "{{ site.theme }}";
 
+h1.page-header {
+  color: #fff;
+}
+
 #skip-to-content {
   height: 1px;
   width: 1px;
