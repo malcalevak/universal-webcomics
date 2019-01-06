@@ -6,11 +6,11 @@ $blockquote-text-color: #6A7A72;
   
 @import "{{ site.theme }}";
 
-h1.page-header {
+header h1 {
   color: #fff;
 }
 
-.btn.newsletterTrigger {
+footer .btn.newsletterTrigger {
   margin-bottom: 1rem;
   color: rgba(21,153,87,.7);
   background-color: rgba(21,153,87,.08);
