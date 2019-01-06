@@ -10,6 +10,23 @@ h1.page-header {
   color: #fff;
 }
 
+.btn.newsletterTrigger {
+  margin-bottom: 1rem;
+  color: rgba(21,153,87,.7);
+  background-color: rgba(21,153,87,.08);
+  border-color: rgba(21,153,87,.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  &:hover  {
+    color: rgba(21,153,87,.8);
+    text-decoration: none;
+    background-color: rgba(21,153,87,.02);
+    border-color: rgba(21,153,87,.3);
+  }
+}
+
 #skip-to-content {
   height: 1px;
   width: 1px;
