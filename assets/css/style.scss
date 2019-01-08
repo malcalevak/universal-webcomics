@@ -1,47 +1,7 @@
 ---
 ---
 
-$header-bg-color: #12672a;
-$section-headings-color: #12672a;
-$blockquote-text-color: #6A7A72;
-  
+@import 'overrides';
 @import "{{ site.theme }}";
 @import 'mailchimp';
-
-header h1 {
-  color: #fff;
-}
-
-.btn:focus {
-  @extend .btn:hover;
-}
-
-footer .btn.newsletterTrigger {
-  background-color: rgba($section-headings-color,0.9);
-  border-color: rgba($section-headings-color,0.2);
-  color: rgba(#fff,0.9);
-  &:hover, &:focus  {
-    background-color: $section-headings-color;
-    border-color: rgba($section-headings-color,0.3);
-    color: #fff;
-  }
-}
-
-#skip-to-content {
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  overflow: hidden;
-  top: -10px;
-  
-  &:focus {
-    color: #003b77;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    height: auto;
-    width: auto;
-    background: invert($body-link-color);
-    outline: thick solid invert($body-link-color);
-  }
-}
+@import 'custom';
