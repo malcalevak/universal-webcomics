@@ -6,6 +6,7 @@ $section-headings-color: #12672a;
 $blockquote-text-color: #6A7A72;
   
 @import "{{ site.theme }}";
+@import 'mailchimp';
 
 header h1 {
   color: #fff;
