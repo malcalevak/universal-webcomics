@@ -1,7 +1,8 @@
 ---
 ---
 
-$section-headings-color: #12874D;
+$header-bg-color: #12672a;
+$section-headings-color: #12672a;
 $blockquote-text-color: #6A7A72;
   
 @import "{{ site.theme }}";
@@ -10,20 +11,18 @@ header h1 {
   color: #fff;
 }
 
+.btn:focus {
+  @extend .btn:hover;
+}
+
 footer .btn.newsletterTrigger {
-  margin-bottom: 1rem;
-  color: rgba(21,153,87,.7);
-  background-color: rgba(21,153,87,.08);
-  border-color: rgba(21,153,87,.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  &:hover  {
-    color: rgba(21,153,87,.8);
-    text-decoration: none;
-    background-color: rgba(21,153,87,.02);
-    border-color: rgba(21,153,87,.3);
+  background-color: rgba($section-headings-color,0.9);
+  border-color: rgba($section-headings-color,0.2);
+  color: rgba(#fff,0.9);
+  &:hover, &:focus  {
+    background-color: $section-headings-color;
+    border-color: rgba($section-headings-color,0.3);
+    color: #fff;
   }
 }
 
