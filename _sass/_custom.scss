@@ -18,6 +18,10 @@ footer .btn.newsletterTrigger {
   }
 }
 
+.uk-modal-dialog {
+  border-radius: 0.3rem;
+}
+
 [tabindex]:not([tabindex="-1"]), a, button, input, select, submit, textarea, .uk-input, .uk-select, .uk-textarea, .uk-checkbox, .uk-radio {
     transition: outline-offset .2s linear;
     &:focus {
