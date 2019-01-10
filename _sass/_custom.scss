@@ -20,10 +20,10 @@ footer .btn.newsletterTrigger {
 
 [tabindex]:not([tabindex="-1"]), a, button, input, select, submit, textarea, .uk-input, .uk-select, .uk-textarea, .uk-checkbox, .uk-radio {
     transition: outline-offset .2s linear;
-	&:focus {
-		outline: 2px solid #eed009;
-		outline-offset: 2px;
-	}
+    &:focus {
+        outline: 2px solid #eed009;
+        outline-offset: 2px;
+    }
 }
 
 #skip-to-content {
