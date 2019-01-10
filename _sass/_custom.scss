@@ -7,7 +7,7 @@ header h1 {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s, outline-offset .2s linear;
 }
 
-footer .btn.newsletterTrigger {
+.btn-dark {
   background-color: rgba($section-headings-color,0.9);
   border-color: rgba($section-headings-color,0.2);
   color: rgba(#fff,0.9);
