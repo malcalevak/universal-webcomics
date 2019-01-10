@@ -4,6 +4,7 @@ header h1 {
 
 .btn:focus {
   @extend .btn:hover;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s, outline-offset .2s linear;
 }
 
 footer .btn.newsletterTrigger {
@@ -15,6 +16,14 @@ footer .btn.newsletterTrigger {
     border-color: rgba($section-headings-color,0.3);
     color: #fff;
   }
+}
+
+[tabindex]:not([tabindex="-1"]), a, button, input, select, submit, textarea, .uk-input, .uk-select, .uk-textarea, .uk-checkbox, .uk-radio {
+    transition: outline-offset .2s linear;
+	&:focus {
+		outline: 2px solid #eed009;
+		outline-offset: 2px;
+	}
 }
 
 #skip-to-content {
