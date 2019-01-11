@@ -53,7 +53,7 @@
 					<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 
 					<div class="uk-margin">
-						<label class="uk-form-label" for="mce-EMAIL">Email Address	<span class="asterisk">*</span></label>
+						<label class="uk-form-label" for="mce-EMAIL"><span class="asterisk">*</span> Email Address</label>
 						<div class="uk-form-controls">
 							<input class="uk-input required email" id="mce-EMAIL" placeholder="Your Email"  type="email" value="" name="EMAIL" required>
 						</div>
@@ -71,8 +71,8 @@
 						</div>
 					</div>
 
-					<div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-						<div class="uk-form-label">Email Format:</div>
+					<fieldset class="uk-margin uk-grid-small uk-child-width-auto uk-grid" uk-grid>
+						<legend class="uk-legend uk-form-label">Email Format:</div>
 						<div class="uk-form-controls">
 							<label class="uk-display-block">
 								<input class="uk-radio" type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0" checked> HTML
@@ -81,9 +81,9 @@
 								<input class="uk-radio" type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"> Text
 							</label>
 						</div>
-					</div>
-					<div id="uk-margin" class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-						<label for="gdpr_14361" class="uk-form-label"><input type="checkbox" id="gdpr_14361" name="gdpr[14361]" value="Y" class="uk-checkbox ">I confirm I'd like to opt-in to the newsletter, and I understand and consent to the <a href="#" target="_blank">privacy policy</a>.</label>
+					</fieldset>
+					<div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+						<label for="gdpr_14361" class="uk-form-label"><span class="asterisk">*</span> <input type="checkbox" id="gdpr_14361" name="gdpr[14361]" value="Y" class="uk-checkbox uk-margin-small-right" required>I confirm I'd like to opt-in to the newsletter, and I understand and consent to the <a href="#" target="_blank">privacy policy</a>.</label>
 						<p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
 					</div>
 					<div id="mce-responses" class="clear">
