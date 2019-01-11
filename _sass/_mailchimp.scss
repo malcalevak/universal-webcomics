@@ -4,10 +4,6 @@
         font-size: 14px;
 }
 
-#mc_embed_signup form {
-    text-align: left;
-}
-
 #mc_embed_signup .indicates-required {
     text-align: right;
     font-size: 11px;
@@ -24,13 +20,10 @@
 
 //Need to test how necessary any of these are
 
-#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
 #mergeRow-gdpr {margin-top: 20px;}
 #mergeRow-gdpr fieldset label {font-weight: normal;}
 #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
 #mc_embed_signup input:focus {border-color:#333;}
-#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
-#mc_embed_signup .asterisk {color:#e85c41; font-size:150%; font-weight:normal; position:relative; top:5px;}     
 
 #mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%; margin: 0 5%; clear: both;}
 #mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
