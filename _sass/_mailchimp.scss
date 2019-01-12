@@ -3,19 +3,9 @@
         font-weight: normal;
         font-size: 14px;
 }
-
-#mc_embed_signup .indicates-required {
-    text-align: right;
-    font-size: 11px;
-    margin-right: 4%;
-}
-
-#mc_embed_signup .asterisk {
-    color: #e85c41;
-    font-size: 150%;
-    font-weight: normal;
-    position: relative;
-    top: 5px;
+#mc_embed_signup .required {
+    color: #df0000;
+    font-weight: bold;
 }
 
 //Need to test how necessary any of these are
