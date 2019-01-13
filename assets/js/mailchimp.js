@@ -140,7 +140,11 @@ $(function  () {
 		                var fieldName = $("input[name*='"+fnames[index]+"']").attr('name'); // Make sure this exists (they haven't deleted the fnames array lookup)
 		                var data = {};
 		                data[fieldName] = msg;
-		                mc.mce_validator.showErrors(data);
+						if(typeof $("#mc-embedded-subscribe-form")[0].reportValidity === "function") {
+							$("#mc-embedded-subscribe-form")[0].reportValidity();
+						} else {
+							mc.mce_validator.showErrors(data);
+						}
 		            }
 		        } catch(e){
 		            $('#mce-'+resp.result+'-response').show();
@@ -150,7 +154,7 @@ $(function  () {
 		}
 	}
 
-	window.mc.mce_validator = $("#mc-embedded-subscribe-form").validate({
+		window.mc.mce_validator = $("#mc-embedded-subscribe-form").validate({
 
 		// Set error HTML: <div class="mce_inline_error"></div>
 		errorClass: "mce_inline_error", 
