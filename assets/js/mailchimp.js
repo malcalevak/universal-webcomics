@@ -9,7 +9,7 @@
   ftypes[2]='text';
 }(jQuery));
 //var $mcj = jQuery.noConflict(true);
-
+/*
 $(function  () {    
   $("#mc-embedded-subscribe-form").submit(function(e) {
     e.preventDefault(); 
@@ -17,7 +17,7 @@ $(function  () {
         url : "contacto_web.php",
         type : "POST",
         data : {
-          $("#contacto_web").serialize();
+          $("#mc-embedded-subscribe-form").serialize();
         },
         before : function () {
 
@@ -45,6 +45,7 @@ $(function  () {
     });
   });      
 });
+*/
 
 /*!
  * jQuery Form Plugin
