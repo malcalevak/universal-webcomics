@@ -146,10 +146,6 @@
 				$(element).valid();
 			}
 		},
-		// Grouping fields makes jQuery Validation display one error for all the fields in the group
-		// It doesn't have anything to do with how the fields are validated (together or separately), 
-		// it's strictly for visual display of errors
-		groups: mc.getGroups(),
 		// Place a field's inline error HTML just before the div.mc-field-group closing tag 
 		errorPlacement: function(error, element) {
 			element.closest('.mc-field-group').append(error);
