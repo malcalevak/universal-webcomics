@@ -2,6 +2,11 @@ header h1 {
 	color: #fff;
 }
 
+//Improve the darkness of placeholder text
+.uk-input::placeholder, ::placeholder {
+	 color: #767676;
+}
+
 .btn:focus {
 	@extend .btn:hover;
 	transition: color 0.2s, background-color 0.2s, border-color 0.2s, outline-offset .2s linear;
@@ -32,6 +37,8 @@ header h1 {
 	border-radius: 0.3rem;
 }
 
+
+//This helps keyboard users see their targets
 [tabindex]:not([tabindex="-1"]), a, button, input, select, submit, textarea, .uk-input, .uk-select, .uk-textarea, .uk-checkbox, .uk-radio {
 		transition: outline-offset .2s linear;
 		&:focus {
