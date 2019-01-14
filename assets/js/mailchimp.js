@@ -16,7 +16,9 @@
 				success: function (data) {
 					console.log(data.result);
 					if(data.result === 'success') {
-						UIkit.modal.dialog(data.msg);
+						$("#mailchimp-response-modal .uk-modal-title").text('Thank You!');
+						$("#mailchimp-response-modal .uk-modal-message").text(data.msg);
+						UIkit.modal("#mailchimp-response-modal",{stack: false}).show();
 					} else {
 						var msg = data.msg.split(' - ',2);
 						if (msg[1]==undefined) {
@@ -24,12 +26,15 @@
 						} else {
 							msg = msg[1];
 						}
-						UIkit.modal.alert(msg);
-						return false;
+						$("#mailchimp-response-modal .uk-modal-title").text('Error');
+						$("#mailchimp-response-modal .uk-modal-message").text(data.msg);
+						UIkit.modal("#mailchimp-response-modal",{stack: true}).show();
 					}
 				},
 				error: function (data) {
-					UIkit.modal.alert("There seems to have been an unknown error. Apologies, please try again later.");
+					$("#mailchimp-response-modal .uk-modal-title").text('Error');
+						$("#mailchimp-response-modal .uk-modal-message").text("There seems to have been an unknown error. Apologies, please try again later.");
+						UIkit.modal("#mailchimp-response-modal",{stack: true}).show();
 				}
 			});
 		});
