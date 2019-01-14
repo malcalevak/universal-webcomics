@@ -14,11 +14,21 @@
 				data: $("#mc-embedded-subscribe-form").serialize(),
 				before: function () {},
 				success: function (data) {
-					UIkit.modal("#newsletter").hide();
-					UIkit.modal.dialog(data.msg);
+					if(data.result === 'success') {
+						UIkit.modal("#newsletter").hide();
+						UIkit.modal.dialog(data.msg);
+					} else {
+						var msg = data.msg.split(' - ',2);
+						if (msg[1]==undefined) {
+							msg = msg[0];
+						} else {
+							msg = msg[1];
+						}
+						UIkit.modal.alert(msg);
+					}
 				},
 				error: function (data) {
-					UIkit.modal.alert(data.msg);
+					UIkit.modal.alert("There seems to have been an unknown error. Apologies, please try again later.");
 				}
 			});
 		});
