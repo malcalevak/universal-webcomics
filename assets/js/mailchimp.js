@@ -15,7 +15,7 @@
 			url += "&c=?";
 			$.ajax({
 				url: url,
-				type: "POST",
+				type: "GET",
 				data: $("#mc-embedded-subscribe-form").serialize(),
 				before: function () {},
 				success: function (data) {
