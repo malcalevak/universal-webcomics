@@ -11,6 +11,7 @@ header h1 {
   background-color: rgba($section-headings-color,0.9);
   border-color: rgba($section-headings-color,0.2);
   color: rgba(#fff,0.9);
+  min-width: 6rem;
   &:hover, &:focus  {
     background-color: $section-headings-color;
     border-color: rgba($section-headings-color,0.3);
