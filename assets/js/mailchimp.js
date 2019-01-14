@@ -16,10 +16,10 @@
 				success: function (data) {
 					console.log(data.result);
 					if(data.result === 'success') {
-						$("#mailchimp-response-modal").removeClass('mc-error');
-						$("#mailchimp-response-modal .uk-modal-title").text('Thank You!');
-						$("#mailchimp-response-modal .uk-modal-message").text(data.msg);
-						UIkit.modal("#mailchimp-response-modal",{stack: false}).show();
+						$("#mc-response-modal").removeClass('mc-error');
+						$("#c-response-modal .uk-modal-title").text('Thank You!');
+						$("#mc-response-modal .uk-modal-message").text(data.msg);
+						UIkit.modal("#mc-response-modal",{stack: false}).show();
 					} else {
 						var msg = data.msg.split(' - ',2);
 						if (msg[1]==undefined) {
@@ -27,16 +27,16 @@
 						} else {
 							msg = msg[1];
 						}
-						$("#mailchimp-response-modal").addClass('mc-error');
-						$("#mailchimp-response-modal .uk-modal-title").text('Error');
-						$("#mailchimp-response-modal .uk-modal-message").text(data.msg);
-						UIkit.modal("#mailchimp-response-modal",{stack: true}).show();
+						$("#mc-response-modal").addClass('mc-error');
+						$("#mc-response-modal .uk-modal-title").text('Error');
+						$("#mc-response-modal .uk-modal-message").text(data.msg);
+						UIkit.modal("#mc-response-modal",{stack: true}).show();
 					}
 				},
 				error: function (data) {
-					$("#mailchimp-response-modal .uk-modal-title").text('Error');
-						$("#mailchimp-response-modal .uk-modal-message").text("There seems to have been an unknown error. Apologies, please try again later.");
-						UIkit.modal("#mailchimp-response-modal",{stack: true}).show();
+					$("#mc-response-modal .uk-modal-title").text('Error');
+						$("#mc-response-modal .uk-modal-message").text("There seems to have been an unknown error. Apologies, please try again later.");
+						UIkit.modal("#mc-response-modal",{stack: true}).show();
 				}
 			});
 		});
