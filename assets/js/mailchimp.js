@@ -14,6 +14,7 @@
 				data: $("#mc-embedded-subscribe-form").serialize(),
 				before: function () {},
 				success: function (data) {
+					console.log(data.result);
 					if(data.result === 'success') {
 						UIkit.modal("#newsletter").hide();
 						UIkit.modal.dialog(data.msg);
