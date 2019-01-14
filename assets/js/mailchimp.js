@@ -16,6 +16,7 @@
 			$.ajax({
 				url: url,
 				type: "GET",
+    				crossDomain: true,
 				data: $("#mc-embedded-subscribe-form").serialize(),
 				before: function () {},
 				success: function (data) {
