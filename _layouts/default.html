@@ -100,6 +100,13 @@
 						</form>
 					</div>
 				</div>
+				<div id="mailchimp-response-modal" uk-modal>
+				    <div class="uk-modal-dialog uk-modal-body">
+						<h2 class="uk-modal-title"></h2>
+							<p class="uk-modal-message"></p>
+						<button class="uk-modal-close" type="button">Ok</button>
+				    </div>
+				</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
 				<script src="{{ '/assets/js/mailchimp.js?v=' | append: site.github.build_revision | relative_url }}"></script>
