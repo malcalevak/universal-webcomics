@@ -16,6 +16,7 @@
 				success: function (data) {
 					console.log(data.result);
 					if(data.result === 'success') {
+						$("#mailchimp-response-modal").removeClass('mc-error');
 						$("#mailchimp-response-modal .uk-modal-title").text('Thank You!');
 						$("#mailchimp-response-modal .uk-modal-message").text(data.msg);
 						UIkit.modal("#mailchimp-response-modal",{stack: false}).show();
@@ -26,6 +27,7 @@
 						} else {
 							msg = msg[1];
 						}
+						$("#mailchimp-response-modal").addClass('mc-error');
 						$("#mailchimp-response-modal .uk-modal-title").text('Error');
 						$("#mailchimp-response-modal .uk-modal-message").text(data.msg);
 						UIkit.modal("#mailchimp-response-modal",{stack: true}).show();
