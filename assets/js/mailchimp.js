@@ -9,16 +9,14 @@
 	ftypes[2]='text';
 	$( document ).ready(function	() {	 
 		$("#mc-embedded-subscribe-form").submit(function(e) {
-		e.preventDefault(); 
+			e.preventDefault(); 
 			var url = $("form#mc-embedded-subscribe-form").attr("action");
 			url = url.replace("/post?u=", "/post-json?u=");
 			url += "&c=?";
 			$.ajax({
 				url : url,
 				type : "POST",
-				data : {
-					$("#mc-embedded-subscribe-form").serialize();
-				},
+				data : $("#mc-embedded-subscribe-form").serialize(),
 				before : function () {
 
 				},
@@ -37,11 +35,9 @@
 							timeout : 5000,
 							pos		 : 'top-center'
 						});
-					}
-*/				error : function () {
-				},
-
-				},
+*/					}
+				error : function () {
+				}
 			});
 		});			
 	});
