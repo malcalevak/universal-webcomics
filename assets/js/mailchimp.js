@@ -16,7 +16,7 @@
 				success: function (data) {
 					if(data.result === 'success') {
 						$("#mc-response-modal").removeClass('mc-error');
-						$("#c-response-modal .uk-modal-title").text('Thank You!');
+						$("#mc-response-modal .uk-modal-title").text('Thank You!');
 						$("#mc-response-modal .uk-modal-message").text(data.msg);
 						UIkit.modal("#mc-response-modal",{stack: false}).show();
 					} else {
