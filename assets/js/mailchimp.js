@@ -16,7 +16,9 @@
 			$.ajax({
 				url: url,
 				type: "GET",
-    				crossDomain: true,
+				crossDomain: true,
+				dataType: 'json', 
+				contentType: "application/json; charset=utf-8",
 				data: $("#mc-embedded-subscribe-form").serialize(),
 				before: function () {},
 				success: function (data) {
