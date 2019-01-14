@@ -20,11 +20,11 @@ header h1 {
 }
 
 .mc-error .btn-dark {
-	background-color: rgba($warning-alert-red,0.9);
-	border-color: rgba($warning-alert-red,0.2);
+	background-color: rgba($global-danger-background,0.9);
+	border-color: rgba($global-danger-background,0.2);
 	&:hover, &:focus	{
-		background-color: $warning-alert-red;
-		border-color: rgba($warning-alert-red,0.3);
+		background-color: $global-danger-background;
+		border-color: rgba($global-danger-background,0.3);
 	}
 }
 
