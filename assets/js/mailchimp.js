@@ -16,7 +16,6 @@
 				success: function (data) {
 					console.log(data.result);
 					if(data.result === 'success') {
-						UIkit.modal("#newsletter").hide();
 						UIkit.modal.dialog(data.msg);
 					} else {
 						var msg = data.msg.split(' - ',2);
@@ -26,6 +25,7 @@
 							msg = msg[1];
 						}
 						UIkit.modal.alert(msg);
+						return false;
 					}
 				},
 				error: function (data) {
