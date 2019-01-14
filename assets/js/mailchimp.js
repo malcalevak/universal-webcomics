@@ -14,7 +14,6 @@
 				data: $("#mc-embedded-subscribe-form").serialize(),
 				before: function () {},
 				success: function (data) {
-					console.log(data.result);
 					if(data.result === 'success') {
 						$("#mc-response-modal").removeClass('mc-error');
 						$("#c-response-modal .uk-modal-title").text('Thank You!');
@@ -29,14 +28,14 @@
 						}
 						$("#mc-response-modal").addClass('mc-error');
 						$("#mc-response-modal .uk-modal-title").text('Error');
-						$("#mc-response-modal .uk-modal-message").text(data.msg);
+						$("#mc-response-modal .uk-modal-message").text(msg);
 						UIkit.modal("#mc-response-modal",{stack: true}).show();
 					}
 				},
 				error: function (data) {
 					$("#mc-response-modal .uk-modal-title").text('Error');
-						$("#mc-response-modal .uk-modal-message").text("There seems to have been an unknown error. Apologies, please try again later.");
-						UIkit.modal("#mc-response-modal",{stack: true}).show();
+					$("#mc-response-modal .uk-modal-message").text("There seems to have been an unknown error. Apologies, please try again later.");
+					UIkit.modal("#mc-response-modal",{stack: true}).show();
 				}
 			});
 		});
