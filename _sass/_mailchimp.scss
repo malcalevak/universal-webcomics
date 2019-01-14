@@ -4,12 +4,12 @@
 	font-size: 14px;
 }
 #mc_embed_signup .required {
-	color: $warning-alert-red;
+	color: $text-danger-color;
 	font-weight: bold;
 }
 
 #mc-response-modal.mc-error {
-	color: $warning-alert-red;
+	color: $text-danger-color;
 }
 
 #mc_embed_signup input:focus {
