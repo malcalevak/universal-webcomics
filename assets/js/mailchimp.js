@@ -1,5 +1,51 @@
+var tabHandle,
+	disabledHandle,
+	hiddenHandle,
+	tabFocus,
+	preFocus = new Array();
 (function ($) {
 	$(document).ready(function () {
+		
+		$(document).on('show.uk.modal', function(e) {
+			var context =  e.target.firstElementChild;
+
+			// Remember activating element so we can return focus to it once we close the dialog
+			preFocus.push(document.activeElement);
+
+			// Trap Tab key focus to dialog
+			tabHandle = ally.maintain.tabFocus({
+				context: context,
+			});
+			
+			// Disable elements outside of the dialog
+			disabledHandle = ally.maintain.disabled({
+				filter: context,
+			});
+			
+			// Hide everything else from the accessibility tree.
+			hiddenHandle = ally.maintain.hidden({
+				filter: context,
+			});
+			
+			// Find, then focus on first tabbable dialog element
+			var tabFocus = ally.query.firstTabbable({
+				context: context,
+				defaultToContext: true,
+			});
+			tabFocus.focus();
+        });
+
+		$(document).on('hide.uk.modal', function(e) {
+			// Restore Tab key focusing
+			tabHandle.disengage();
+			// undo disabling elements outside of the dialog
+			disabledHandle.disengage()
+			// undo hiding elements outside of the dialog from the accessibility tree.
+			hiddenHandle.disengage();
+			// return focus to where it was before we opened the dialog
+			preFocus.pop().focus();
+        });
+		
 		$("#mc-embedded-subscribe-form").submit(function (e) {
 			e.preventDefault();
 			var url = $("form#mc-embedded-subscribe-form").attr("action");
