@@ -24,9 +24,14 @@ var tabHandle,
         });
 
 		$(document).on('hide.uk.modal', function(e) {
-			console.log(e);
-			// call our dialogHandler, relay context, and send true if we still have a modal open
-			dialogHandlerUndo(e.target,$('.uk-modal.uk-open').length);
+			var modalCount = preFocus.length-1;
+			//if we've still got a modal open, figure out the context and call our handler, otherwise just undo
+			if(modalCount) {
+				// call our dialogHandler, relay context, and send true if we still have a modal open
+				dialogHandler($(preFocus[modalCount]).closest('.uk-modal.uk-open'),true);
+			} else {
+				dialogHandlerUndo();
+			}
 			// return focus to where it was before we opened the dialog
 			preFocus.pop().focus();
         });
