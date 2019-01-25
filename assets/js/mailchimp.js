@@ -7,7 +7,7 @@ var tabHandle,
 	$(document).ready(function () {
 		
 		$(document).on('show.uk.modal', function(e) {
-			var context =  e.target.firstElementChild;
+			var context =  e.target;
 
 			// Remember activating element so we can return focus to it once we close the dialog
 			preFocus.push(document.activeElement);
