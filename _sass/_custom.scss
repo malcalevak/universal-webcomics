@@ -42,8 +42,8 @@ header h1 {
 [tabindex]:not([tabindex="-1"]), a, button, input, select, submit, textarea, .uk-input, .uk-select, .uk-textarea, .uk-checkbox, .uk-radio {
 		transition: outline-offset .2s linear;
 		&:focus {
-				outline: 2px solid #eed009;
-				outline-offset: 2px;
+			outline: 2px solid #eed009 !important;
+			outline-offset: 2px;
 		}
 }
 
