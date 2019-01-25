@@ -12,20 +12,8 @@ var tabHandle,
 			// Remember activating element so we can return focus to it once we close the dialog
 			preFocus.push(document.activeElement);
 
-			// Trap Tab key focus to dialog
-			tabHandle = ally.maintain.tabFocus({
-				context: context,
-			});
-			
-			// Disable elements outside of the dialog
-			disabledHandle = ally.maintain.disabled({
-				filter: context,
-			});
-			
-			// Hide everything else from the accessibility tree.
-			hiddenHandle = ally.maintain.hidden({
-				filter: context,
-			});
+			// call our dialogHandler, relay context, and send true if we have multiple modals
+			dialogHandler(context,$('.uk-modal.uk-open').length-1);
 			
 			// Find, then focus on first tabbable dialog element
 			var tabFocus = ally.query.firstTabbable({
@@ -36,12 +24,9 @@ var tabHandle,
         });
 
 		$(document).on('hide.uk.modal', function(e) {
-			// Restore Tab key focusing
-			tabHandle.disengage();
-			// undo disabling elements outside of the dialog
-			disabledHandle.disengage()
-			// undo hiding elements outside of the dialog from the accessibility tree.
-			hiddenHandle.disengage();
+			console.log(e);
+			// call our dialogHandler, relay context, and send true if we still have a modal open
+			dialogHandlerUndo(e.target,$('.uk-modal.uk-open').length);
 			// return focus to where it was before we opened the dialog
 			preFocus.pop().focus();
         });
@@ -87,3 +72,32 @@ var tabHandle,
 		});
 	});
 }(jQuery));
+
+function dialogHandler (context,undoFirst) {
+	if (undoFirst) {
+		dialogHandlerUndo();
+	}
+	// Trap Tab key focus to dialog
+	tabHandle = ally.maintain.tabFocus({
+		context: context,
+	});
+
+	// Disable elements outside of the dialog
+	disabledHandle = ally.maintain.disabled({
+		filter: context,
+	});
+
+	// Hide everything else from the accessibility tree.
+	hiddenHandle = ally.maintain.hidden({
+		filter: context,
+	});
+}
+
+function dialogHandlerUndo () {
+	// Restore Tab key focusing
+	tabHandle.disengage();
+	// undo disabling elements outside of the dialog
+	disabledHandle.disengage()
+	// undo hiding elements outside of the dialog from the accessibility tree.
+	hiddenHandle.disengage();
+}
