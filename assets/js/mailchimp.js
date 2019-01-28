@@ -2,12 +2,14 @@ var tabHandle,
 	disabledHandle,
 	hiddenHandle,
 	tabFocus,
-	preFocus = new Array();
+	preFocus = new Array(),
+    contexts = new Array();
 (function ($) {
 	$(document).ready(function () {
 		
 		$(document).on('show.uk.modal', function(e) {
 			var context =  e.target;
+			contexts.push(context);
 
 			// Remember activating element so we can return focus to it once we close the dialog
 			preFocus.push(document.activeElement);
@@ -28,7 +30,7 @@ var tabHandle,
 			//if we've still got a modal open, figure out the context and call our handler, otherwise just undo
 			if(modalCount) {
 				// call our dialogHandler, relay context, and send true if we still have a modal open
-				dialogHandler($(preFocus[modalCount]).closest('.uk-modal.uk-open'),true);
+				dialogHandler(context.pop(),true);
 			} else {
 				dialogHandlerUndo();
 			}
