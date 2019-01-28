@@ -30,7 +30,7 @@ var tabHandle,
 			//if we've still got a modal open, figure out the context and call our handler, otherwise just undo
 			if(modalCount) {
 				// call our dialogHandler, relay context, and send true if we still have a modal open
-				dialogHandler(context.pop(),true);
+				dialogHandler(contexts.pop(),true);
 			} else {
 				dialogHandlerUndo();
 			}
