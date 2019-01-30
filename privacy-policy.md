@@ -1,5 +1,5 @@
 ---
-title: Universal Webcomics Privacy Policy
+title: Privacy Policy
 ---
 
 This is a placeholder.
