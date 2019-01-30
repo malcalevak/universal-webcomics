@@ -28,6 +28,9 @@ var tabHandle,
 		$(document).on('hide.uk.modal', function(e) {
 			var modalCount = preFocus.length-1,
 				context = contexts.pop();
+			if(context.length == modalCount) {
+				context = contexts.pop();//we never want the context of the last open modal, but the next to last
+			}
 			//if we've still got a modal open, figure out the context and call our handler, otherwise just undo
 			if(modalCount) {
 				// call our dialogHandler, relay context, and send true if we still have a modal open
