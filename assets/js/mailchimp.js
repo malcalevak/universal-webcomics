@@ -26,13 +26,12 @@ var tabHandle,
         });
 
 		$(document).on('hide.uk.modal', function(e) {
-			var modalCount = preFocus.length-1;
-			//if we've still got a modal open, figure out the context and call our handler, otherwise just undo
-			if(modalCount) {
-				//our context is never the last open modal, remember arrays are 0 based
-				context = contexts.splice(modalCount-1,1);
+			contexts.pop();//discard the most recent context
+
+			//if we've still got a modal open, grab the last context and call our handler, otherwise just undo
+			if(preFocus.length-1) {
 				// call our dialogHandler, relay context, and send true if we still have a modal open
-				dialogHandler(context,true);
+				dialogHandler(contexts[contexts.length-1],true);
 			} else {
 				dialogHandlerUndo();
 			}
