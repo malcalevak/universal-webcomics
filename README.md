@@ -64,7 +64,7 @@ The initial phase of this project is focused on what’s called “[accessibilit
   <li>Provide suggested Best Practices and Guidance for items not explicitly covered by WCAG</li>
   <li>Provide examples demonstrating these best practices, along with corresponding documentation explaining them.</li>
   <li>Maintain a low level ease of implementation - if it’s complicated, no one is going to want to make the effort</li>
-  <li>Provide guidance on how taking these small efforts can monetized and financially worth the effort.</li>
+  <li>Provide guidance on how taking these small efforts can be monetized and financially worth the effort.</li>
   <li>Provide guidance on how to improve the accessibility of the actual art.</li>
 </ul>
 
