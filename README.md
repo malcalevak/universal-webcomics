@@ -1,17 +1,24 @@
 <!-- blank line -->
 <div hidden>
   
-# Universal Webcomics - WIP
+# Universal Webcomics
 
 </div>
-<article markdown="1" aria-labelledby="what-it-is">
+<article markdown="1" aria-labelledby="what-is-universal-webcomics">
 
-## What it is
-First and foremost, it is a conversation, an endeavor to build an understanding of the comic creation processes and to create and provide easy to understand guidance on enhancing these comics to make them both more accessible (WCAG compliant) and capable of supporting multiple languages (internationalization).
+## What is Universal Webcomics?
+First and foremost, Universal Webcomics is a conversation, an endeavor to build an understanding of the comic creation processes and to create and provide easy to understand guidance on enhancing these comics to make them both more accessible ([WCAG](<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">) compliant) and capable of supporting multiple languages ([internationalization](https://en.wikipedia.org/wiki/Internationalization_and_localization)).
 
 </article>
 
-## Who is involved
+<article markdown="1" aria-labelledby="why-create-universal-webcomics">
+
+## Why create Universal Webcomics?
+Since I was a child, I've had a love of comics. Daily, I would dig through the newspaper for the “funny pages”; this naturally progressed to reading comics on the internet. Much much later, during my career as a web developer, I was introduced to the world of [web accessibility](https://en.wikipedia.org/wiki/Computer_accessibility) and became an impassioned advocate for it. At some point it occurred to me - as much as I enjoy comics, they are primarily a visual medium and are unintentionally locking out blind and vision-impaired readers. Thanks to the knowledge I've gained developing accessible solutions on the web, I understand that they don't need to be, and at its most basic level, it's not even that hard to implement! Building off of this idea, I was curious who else might not be able to enjoy the same things that I did, which led me to the topic of [internationalization](https://en.wikipedia.org/wiki/Internationalization_and_localization). While I personally benefit from the dominance of English in the digital world, both as a consumer and a creator, others do not. Along with gaining knowledge to develop accessible solutions, I've also had some experience creating internationalized experiences, though this poses its own unique challenges in a visual medium. Ultimately, this project will hopefully provide guidance on the means to open up this world to both groups of users. If absolutely anyone is able to access a new world as a result of this project, I will consider it a success.
+
+</article>
+
+## Who is involved in Universal Webcomics?
 <ul aria-labelledby="who-is-involved">
   <li>Cartoonists</li>
   <li>Target Audiences</li>
@@ -19,19 +26,26 @@ First and foremost, it is a conversation, an endeavor to build an understanding 
   <li><strong>YOU!</strong></li>
 </ul>
 
-<article markdown="1" aria-labelledby="why">
+<article markdown="1" aria-labelledby="how-will-universal-webcomics-work">
 
-## Why
-I have enjoyed comics since I was a small child. I would dig through the daily newspaper for the “funnies”; this naturally progressed to reading comics on the internet. As a web developer, I was introduced to the world of accessibility and gained a bit of a passion for it. At some point it occurred to me - as much as I enjoy comics, as a primarily visual medium they are typically unintentionally locked out to the blind, but, having learned about web accessibility I understand, they don’t need to be. This project will hopefully provide guidance on the means to open up this world to them. If absolutely anyone is able to access a new world as a result of this project, I will consider it a success.
+## How will Universal Webcomics Work?
+While the central goal of Universal Webcomics is one of making webcomics "universally" accessible, it's targeting to specific areas to do so - [accessibility](https://en.wikipedia.org/wiki/Computer_accessibility) and [internationalization](https://en.wikipedia.org/wiki/Internationalization_and_localization). While there are signification, if not obvious, ways in which these two areas overlap, they are different enough to warrant tackling them separately, in two phases. The first phase, amusingly titled ComicA11y will focus on addressing accessibility and the second phase, which is currently lacking an amusing name, will focus on addressing internationalization.
+
+Before I get more into the specific phases, I want to go back to my opening line, "first and foremost, Universal Webcomics is a conversation." To that end, I've created a newsletter list to facilitate the conversation. Even if you're only mildly passively interested, I encourage you to take a moment to [sign up]! I chose the format of a newsletter over say, a mailing list, because I wanted to keep the discussion focused, and I wanted to maintain a modicum of privacy for everyone involved. To keep it from being one-sided, however, you will be able to respond to the newsletters to e-mail me questions or comments. I'll do my best to incorporate these in the next newsletter, in some cases as a redirection of the question for more thoughts and feedback, and in other cases, to discuss or provide an answer. If for some reason I feel the questions/comments aren't suited for the newsletter, I'll still try to get back to everyone. While I'm hoping to start putting together at least some examples immediately, if this discussion is successful, I'm hoping it will grow and inspire additional examples that further push the limits, or don't otherwise fit the basic "mold".
+
+<article markdown="1" aria-labelledby="how-can-you-help">
+
+### How can you help?
+I can't stress enough that the biggest way you can help is to [sign up for the newsletter] and start taking part in the conversation! Ask/answer questions! Share your thoughts! One particular area that creators could help would be in granting permission to use their work in examples, particularly if they think it presents a unique case that's not been addressed. Links and credit will <span class="uk-text-uppercase">always</span> be given.
 
 </article>
 
 <article markdown="1" aria-labelledby="phase-1-comica11y">
 
-## Phase 1: ComicA11y
+### Phase 1: ComicA11y
 The initial phase of this project is focused on what’s called “[accessibility](https://en.wikipedia.org/wiki/Computer_accessibility)”. “A11y”, pronounced like the word it looks like, “ally”, is the [numeronym](https://en.wikipedia.org/wiki/Numeronym) for “accessibility”. People who work in computer accessibility like to think of themselves as allies to the disabled, and work to ensure technology is usable by them, ideally by bringing the experience up to the same level of quality and pizzaz as other uses (and not vice-versa).
 
-### Phase 1 Goals
+#### Phase 1 Goals
 <ul aria-labelledby="phase-1-goals">
   <li>Provide a single resource that pulls together the latest applicable guidance from the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a>
   </li>
@@ -41,7 +55,7 @@ The initial phase of this project is focused on what’s called “[accessibilit
   <li>Monetization - this implementation be financially worth the effort</li>
 </ul>
 
-### Phase 1 Bonus Goals
+#### Phase 1 Bonus Goals
 <ul aria-labelledby="phase-1-bonus-goals">
   <li>Provide guidance on how to improve the accessibility of the actual art.</li>
 </ul>
@@ -50,10 +64,12 @@ The initial phase of this project is focused on what’s called “[accessibilit
 
 <article markdown="1" aria-labelledby="phase-2-unnamed-i18ninternationalization-phase">
 
-## Phase 2: Unnamed I18n/Internationalization Phase
+### Phase 2: Unnamed I18n/Internationalization Phase
 The second phase of this project is focused on what’s called “[internationalization](https://en.wikipedia.org/wiki/Internationalization_and_localization)”, which has the numeronym “I18n”. Currently this phase doesn’t have a clever name.
 
 It will be built on top of the accessibility layer, harnessing and adapting that functionality. Given that most creators aren’t natively familiar with multiple languages, this effort will likely require some degree of user contribution, where as for accessibility this could be optional.
+
+</article>
 
 </article>
 
