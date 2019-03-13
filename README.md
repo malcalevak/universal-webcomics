@@ -28,6 +28,7 @@ Ultimately, I'm hopeful that this project will provide guidance on the means to 
   <li>Cartoonists</li>
   <li>Target Audiences</li>
   <li>Accessibility Web Developers</li>
+  <li>Comic Platform Developers</li>
   <li><strong>YOU!</strong></li>
 </ul>
 
@@ -43,7 +44,7 @@ Before I get more into the specific phases, I want to go back to my opening line
 ### How can you help?
 I can't stress enough that the biggest way you can help is to <a href="https://transientmonkey.us19.list-manage.com/subscribe/post?u=6127f83d0882bf25e5ea9bbb9&id=12fba3a234" uk-toggle="target: #newsletter">sign up for the newsletter</a> and start taking part in the conversation! Ask/answer questions! Share your thoughts!
 
-If you're familiar with GitHub issues (or are curious), you can file them [here](https://github.com/malcalevak/universal-webcomics/issues).
+If you're familiar with GitHub issues (or are curious), you can file and view them [here](https://github.com/malcalevak/universal-webcomics/issues).
 
 One particular area that creators could help would be in granting permission to use their work in examples, particularly if they think it presents a unique case that's not been addressed. Links and credit will <span class="uk-text-uppercase">always</span> be given.
 
